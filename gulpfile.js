@@ -7,7 +7,12 @@ gulp.task('clean-styles', function () {
     .pipe(clean());
 });
 
-gulp.task('sass', ['clean-styles'], function() {
+gulp.task('clean-compile', function () {
+  return gulp.src(['assets/compile/*.css'], {read: false})
+    .pipe(clean());
+});
+
+gulp.task('sass', ['clean-styles', 'clean-compile'], function() {
     return gulp.src('assets/scss/**/*.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest('assets/css/'));
