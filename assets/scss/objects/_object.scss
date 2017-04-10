@@ -1,0 +1,27 @@
+.main {
+  critical-selector: this;
+  background-color: $color-blue;
+  width: $container-l;
+}
+
+.home {
+  critical-selector: '.home-bar';
+  position: relative;
+  float: left;
+  height: 50vh;
+
+  @media screen and (max-width: 767px) {
+    height: auto;
+    float: right;
+  }
+
+  .main & {
+    position: absolute;
+  }
+
+  &::after {
+    content: "";
+    height: 10vw;
+    width: 10vw;
+  }
+}

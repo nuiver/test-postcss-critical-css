@@ -1,0 +1,16 @@
+{
+  "name": "postcss-critical-css-test",
+  "version": "1.0.0",
+  "description": "Test with postcss-critical-css ang gulp",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mark Nuiver",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-sass": "^3.1.0",
+    "postcss-critical-css": "^2.1.2"
+  }
+}
