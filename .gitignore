@@ -1,4 +1,4 @@
-assets/compile
-assets/css
+assets/compile/*
+assets/css/*
 
 node_modules
