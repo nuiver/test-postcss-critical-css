@@ -1,4 +1,6 @@
 assets/compile/*
+!assets/compile/.gitkeep
 assets/css/*
+!assets/css/.gitkeep
 
 node_modules
