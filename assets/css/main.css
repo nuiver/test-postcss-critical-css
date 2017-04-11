@@ -1,3 +1,10 @@
+@critical secondary.crit.css {
+  .riddle {
+    text-decoration: none;
+    padding-bottom: 120px; }
+  .test {
+    padding-top: 20px; } }
+
 .main {
   critical-selector: this;
   background-color: #369;
@@ -19,7 +26,9 @@
     height: 10vw;
     width: 10vw; }
 
-@critical riddle.css;
-.riddle {
-  text-decoration: none;
-  padding-bottom: 120px; }
+@critical secondary.crit.css {
+  .riddle {
+    text-decoration: none;
+    padding-bottom: 120px; }
+  .test {
+    padding-top: 20px; } }

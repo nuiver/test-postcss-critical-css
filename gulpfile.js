@@ -23,11 +23,11 @@ gulp.task('styles', ['sass'], function() {
   var postcss = require('postcss')
   var postcssCriticalCSS = require('postcss-critical-css');
   const sourcePath = 'assets/css/';
-  const destPath = 'assets/compile';
+  const destPath = 'assets/compile/';
 
   function cb (files) {
     function useFileData (data, file) {
-      postcss([postcssCriticalCSS({outputPath: destPath})])
+      postcss([postcssCriticalCSS({outputPath: destPath, outputDest: 'main.crit.css'})])
         .process(data)
         .then(result => fs.writeFile(
           `${destPath}/${file.split('.')[0]}.non-critical.css`, result.css))
