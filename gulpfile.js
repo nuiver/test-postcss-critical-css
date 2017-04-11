@@ -3,7 +3,7 @@ var clean  = require('gulp-clean');
 var sass = require('gulp-sass');
 
 gulp.task('clean-styles', function () {
-  return gulp.src(['assets/css'], {read: false})
+  return gulp.src(['assets/css/*.css'], {read: false})
     .pipe(clean());
 });
 
